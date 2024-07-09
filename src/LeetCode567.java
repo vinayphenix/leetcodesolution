@@ -4,7 +4,7 @@ public class LeetCode567 {
     public boolean checkInclusion(String s1, String s2) {
         int[] array1 = new int[26];
         int[] array2 = new int[26];
-        int x = 0;
+        int x ;
         int i = 0;
 
         for (; i < s1.length(); i++) {
