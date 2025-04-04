@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class LeetCode283 {
     public void moveZeroes(int[] nums) {
         int f = 0;
