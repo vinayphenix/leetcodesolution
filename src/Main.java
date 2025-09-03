@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         System.out.println("End of program!");
-        int[] array = {9,6,4,2,3,5,7,0,1};
-        new LeetCode268().missingNumber(array);
+        int[] array = {1,3,5,6};
+        new LeetCode704().search(array, 7);
 
     }
 }
