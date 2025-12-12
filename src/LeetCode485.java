@@ -1,18 +1,22 @@
 public class LeetCode485 {
     public int findMaxConsecutiveOnes(int[] nums) {
-
+        int n = nums.length;
+        int i = -1;
+        int j = 0;
         int count = 0;
-        int max = 0;
-        for (int num : nums) {
-            if (num == 1) {
-                count++;
-            } else {
-                if (max < count) {
-                    max = count;
-                }
-                count = 0;
+
+        while (j < n) {
+            if (nums[j] != 0) {
+                j++;
+                continue;
             }
+
+            count = Math.max(count, j - i - 1);
+            i = j;
+            j++;
         }
-        return max < count ? count : max;
+
+        count = Math.max(count, j - i - 1);
+        return count;
     }
 }
